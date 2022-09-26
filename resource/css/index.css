@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0a192f;
+  display: block;
+  margin: 0 10%;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.nav_bar {
+  width: 80%;
+  padding: 10px 0;
+  background-color: #0a192fda;
+  backdrop-filter: blur(10px);
+  display: grid;
+  position: fixed;
+  left: 10%;
+  top: 0;
+  grid-template-columns: 20% 80%;
+}
+
+.nav_bar div {
+  display: grid;
+}
+
+.logo .img_logo {
+  width: 50px;
+  align-content: center;
+  clip-path: polygon(50% 0, 100% 25%, 100% 74%, 50% 100%, 1% 74%, 0 25%);
+  transition: 1s all ease;
+}
+
+.lista_enlaces {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 70px;
+  list-style: none;
+  justify-content: end;
+  text-align: end;
+  align-content: center;
+}
+
+.lista_enlaces .item_enlace a {
+  text-decoration: none;
+  color: #c8ccd8;
+  transition: 1s all ease;
+}
+
+/*EFECTOS DE BARRA DE NAVEGACIÓN */
+
+.lista_enlaces .item_enlace a:hover {
+  text-decoration: none;
+  color: #64ffda;
+}
+.logo .img_logo:hover {
+  cursor: pointer;
+  background-color: #64ffdb49;
+}
+
+/* PRINCIPAL*/
+
+/*PRESENTACION*/
+.principal {
+  margin-top: 140px;
+  text-align: center;
+}
+
+.presentacion {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: auto 0;
+  text-align: left;
+}
+
+.presentacion_txt {
+  color: #c8ccd8;
+  margin: auto 0;
+  display: block;
+}
+
+.presentacion_txt .saludo {
+  font-size: 22px;
+  color: #64ffda;
+}
+
+.presentacion_txt .nombres {
+  font-size: 50px;
+  color: white;
+}
+
+.presentacion_txt .informacion_personal {
+  text-align: justify;
+  padding-right: 40px;
+  padding-top: 30px;
+  font-size: 18px;
+}
+
+.presentacion_txt .descripcion {
+  font-size: 40px;
+}
+
+.img_desarrollo_web {
+  width: 100%;
+}
+
+.btn {
+  background-color: #0a192f00;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 30px;
+  color: #64ffda;
+}
+.icon h5 {
+  font-size: 10px;
+}
+
+/* SOBRE MI */
+
+.sec_sobre_mi {
+  margin-top: 120px;
+  display: block;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #64ffda;
+}
+
+.mi_vida {
+  display: grid;
+  grid-template-columns: 25% auto 200px;
+}
+
+.img_autor {
+  width: 100%;
+  margin: auto;
+  border: 2px solid #64ffda;
+}
+.mi_vida_descripcion {
+  text-align: left;
+  color: #c8ccd8;
+  padding: 0 3rem;
+  display: grid;
+  align-content: center;
+}
+
+.subtitulo{
+  color: #c8ccd8;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.parrafo{
+  font-size: 18px;
+  text-align: justify;
+}
+
+/*ANIMACIÓN SOBRE MI*/
+
+
+
+.tarjeta{
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  border: 1px solid #c8ccd8;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: right;
+}
+
+.tarjeta i{
+  margin: auto;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.tarjeta .label{
+  color: white;
+}
+
+.tarjeta .dato{
+  color: #64ffda;
+}
+
+.mis_labores{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3,300px);
+  column-gap: 20px;
+  justify-content: center;
+  color: #c8ccd8;
+}
+
+.mis_labores .item_labor{
+  border: 1px solid #64ffda;
+  padding-bottom: 15px;
+}
+
+.mis_labores .labor_icono{
+  font-size: 30px;
+  background-color: #0a192f;
+  padding: 20px;
+  border-radius: 40%;
+  margin-top: -40px;
+}
+
+.mis_labores .labor_titulo{
+  color: #64ffda;
+}
+
+.subtitulo_tecnologias{
+  margin: auto;
+  margin-top: -25px;
+  background-color: #0a192f;
+  width: 500px;
+}
+
+.mis_conocimientos{
+  margin-bottom: 100px;
+  color: #c8ccd8;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+
+.item_tecnologia{
+  border: 1px solid #c8ccd8;
+  margin: 3vw auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.item_tecnologia h3{
+  color: #ffffff;
+}
+
+.item_tecnologia .skill{
+  color: #64ffda;
+  margin-bottom: 8px;
+}
+
+.mis_conocimientos .img_arbol{
+  margin: auto 10px;
+}
+.mis_conocimientos .img_arbol img{
+  width: 100%;
+}
+
+
+
+
+footer{
+  height: 200px;
+  background: linear-gradient(#0a192f, #040a14);
+  display: grid;
+  grid-template-columns: 550px 60%;
+}
+
+.logo_layout{
+  margin: auto;
+  display: grid;
+  grid-template-columns: 100px auto;
+}
+
+.logo_layout img{
+  width: 100px;
+}
+
+.logo_layout div{
+  display: grid;
+  align-content: center;
+  padding-left: 20px;
+  text-align: right;
+}
+
+.nombre_layout{
+  color: #64ffda;
+  font-size: 40px;
+}
+
+.info_layout{
+  color: #c8ccd8;
+  font-size: 20px;
+}
+
+.redes_sociales{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 4vw;
+}
+
+.icon_redes i{
+  font-size: 30px;
+  color: #c8ccd8;
+  transition: .5s ease all;
+}
+
+
+.icon_redes i:hover{
+  color: #64ffda;
+}
+
+
+
+
+/* MEDIA QUERYS */
+
+@media only screen and (max-width: 700px) {
+  .presentacion {
+    grid-template-columns: 1fr;
+  }
+
+  .presentacion_txt .informacion_personal {
+    padding-right: 0;
+  }
+
+  .btn {
+    margin-top: 40px;
+  }
+  .presentacion_imagen {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  
+  .sec_sobre_mi {
+    margin-top: 40px;
+  }
+
+  .mi_info{
+    border-bottom: 1px solid #64ffda;
+    margin-bottom: 20px;
+    
+  }
+
+  .subtitulo{
+    font-size: 20px;
+  }
+  
+  .mi_vida{
+    grid-template-columns: 1fr;
+  }
+
+  .mi_vida img{
+    width: 50%;
+    margin-bottom: 20px;
+
+  }
+  .mas_sobre_mi{
+    display: none;
+  }
+
+  .tarjeta{
+    margin: 10px 40px;
+  }
+
+  .mis_labores{
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .subtitulo_tecnologias{
+      width: 200px;
+  }
+
+  .mis_conocimientos{
+    display: block;
+  }
+
+  footer{
+    display: block;
+  }
+
+  .logo_layout{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo_layout img{
+    width: 40px;
+    margin: auto;
+  }
+
+  .logo_layout div{
+    text-align: center;
+  }
+
+  .nombre_layout{
+    font-size: 20px;
+  }
+
+  .redes_sociales{
+    margin-top: 30px;
+  }
+
+}
